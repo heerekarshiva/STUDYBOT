@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Study Mentor — Learn faster from your own material</title><meta name="description" content="Upload notes and textbooks, get AI notes, quizzes, flashcards and a voice tutor.">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<style>.hero{background:linear-gradient(135deg,#0b1226,#312e81 60%,#0e7490);color:#fff;padding:5rem 1.2rem;text-align:center}.hero h1{font-size:clamp(2rem,5vw,3.4rem);max-width:800px;margin:0 auto .8rem}.hero p{max-width:640px;margin:0 auto 1.6rem;color:#cbd5e1;font-size:18px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.4rem;background:#0b1226;color:#fff}nav a{color:#cbd5e1;margin-left:1rem}section{max-width:1100px;margin:0 auto;padding:3rem 1.2rem}section h2{text-align:center;font-size:28px}
+.ic{font-size:28px}details{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:.8rem 1rem;margin:.5rem 0}summary{cursor:pointer;font-weight:600}footer{background:#0b1226;color:#94a3b8;text-align:center;padding:2rem}.step b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--pri);color:#fff}</style></head><body>
+<nav><b>🎓 AI Study <span style="color:#22d3ee">Mentor</span></b><div><a href="#features">Features</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a class="btn sm pri" style="color:#fff" href="/app#/login">Sign in</a></div></nav>
+<header class="hero"><h1>Turn your study material into a personal AI tutor</h1><p>Upload PDFs and handwritten notes, then get notes, formula sheets, quizzes, flashcards and a mentor you can talk to — grounded in your own documents.</p>
+<a class="btn pri" href="/app#/register">Get Started</a> <a class="btn" href="#features">Explore Features</a></header>
+<section id="features"><h2>Everything you need to prepare</h2><div class="grid g3">
+<div class="card hv"><div class="ic">📄</div><h3>Upload &amp; OCR</h3>PDFs, scans and photos of handwritten notes are read and organised by page.</div>
+<div class="card hv"><div class="ic">📝</div><h3>AI Notes</h3>Chapter notes, revision sheets, Q&amp;A, with page references. Export to PDF/Markdown.</div>
+<div class="card hv"><div class="ic">∑</div><h3>Formula Sheets</h3>Auto-extracted formulas with units, usage and OCR verification warnings.</div>
+<div class="card hv"><div class="ic">💬</div><h3>AI Mentor</h3>Ask doubts, get hints or step-by-step solutions with sources.</div>
+<div class="card hv"><div class="ic">🎙️</div><h3>Voice Mentor</h3>Hands-free turn-based conversation using your browser's speech tools.</div>
+<div class="card hv"><div class="ic">🧪</div><h3>Quizzes &amp; Exams</h3>MCQ, fill-in-the-blank, numeric and more. Timed mocks for GATE, GRE, UPSC and others.</div>
+<div class="card hv"><div class="ic">🃏</div><h3>Flashcards</h3>Spaced repetition prioritises what you find hard.</div>
+<div class="card hv"><div class="ic">📈</div><h3>Planner &amp; Progress</h3>Goals, tasks, exam dates, weak-topic detection.</div></div></section>
+<section id="how" style="background:var(--card);max-width:none"><div style="max-width:1000px;margin:auto"><h2>How it works</h2><div class="grid g4">
+<div class="step"><b>1</b><h3>Upload</h3>Add your PDFs or images.</div><div class="step"><b>2</b><h3>Process</h3>Text and OCR are extracted and chunked.</div><div class="step"><b>3</b><h3>Generate</h3>Notes, quizzes and cards from relevant passages.</div><div class="step"><b>4</b><h3>Practice</h3>Ask the mentor and track progress.</div></div>
+<p style="text-align:center"><b>Supported:</b> PDF · PNG · JPG · JPEG (size and page limits are configurable)</p></div></section>
+<section><h2>Privacy &amp; security</h2><div class="card">Your documents are private to your account. The AI key stays on the server, passwords are hashed, uploads are validated, and you can export or delete all your data at any time. Uploaded text is sent to Groq to generate answers. Uploaded text is treated as untrusted data and cannot override the tutor's instructions.</div></section>
+<section id="faq"><h2>FAQ</h2><details><summary>Does voice work in every browser?</summary>Speech recognition depends on the browser (best in Chrome/Edge). If unavailable, the text mentor still works.</details>
+<details><summary>Are the practice questions official?</summary>No. They are AI-generated and not affiliated with any examination authority.</details>
+<details><summary>Can it read handwriting?</summary>OCR works best on clear printed text; handwriting accuracy varies and unclear parts are flagged.</details>
+<details><summary>Is the AI always correct?</summary>No. Check important facts against your source pages.</details></section>
+<footer>© AI Study Mentor · Not affiliated with any exam authority · <a href="/app#/login">Sign in</a></footer></body></html>

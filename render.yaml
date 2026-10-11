@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: ai-study-mentor
+    runtime: docker
+    plan: starter            # persistent disks require a paid plan
+    healthCheckPath: /healthz
+    disk:
+      name: studymentor-data
+      mountPath: /var/data
+      sizeGB: 5
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+      - key: GROQ_API_KEY
+        sync: false            # paste in the Render dashboard
+      - key: GROQ_MODEL
+        value: llama-3.3-70b-versatile
+      - key: DATABASE_URL
+        value: sqlite:////var/data/study_mentor.db
+      - key: UPLOAD_FOLDER
+        value: /var/data/uploads
